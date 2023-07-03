@@ -14,8 +14,8 @@ body{
   padding: 20px;
 }
 #card{
-  width 600px;
-  height: 400px;
+/*  width 600px;
+  height: 400px;*/
   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
   border-radius: 5px;
   overflow: hidden;
@@ -37,7 +37,7 @@ body{
 #bottom-left{
   display: inline-block;
   vertical-align: top;
-    width: 50%;
+  width: 100%;
   height: 100%;
     background-color: #2ab2af;
     padding: 25px;
@@ -48,7 +48,8 @@ body{
 #bottom-right{
     display: inline-block;
     background-color: #2EBFBD;
-    width: 50%;
+    width: 100%;
+
   height: 100%;
     padding: 25px;
 
@@ -78,6 +79,7 @@ button{
 button:hover{
   cursor:pointer;
   background-color: #A9C42D;
+  transform: scale(1.1);
 }
 
 #price{
@@ -110,3 +112,16 @@ button:hover{
   opacity: 0.8;
   
 }
+
+@media (min-width: 576px){
+  #card{
+    width 550px;
+  height: 400px;
+}
+  #bottom-left,#bottom-right{
+    width:50%;
+  }
+  
+
+
+
